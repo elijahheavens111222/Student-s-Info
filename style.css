@@ -1,0 +1,240 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 3%;
+    text-align: center;
+}
+
+/* Semi-container/external container */
+.semi-container {
+    margin-top: 1%;
+    display: flex;
+    gap: 20px;
+}
+
+.info {
+    padding: 20px;
+}
+
+.graduation-img {
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 20px;
+    opacity: 0.5; 
+}
+
+.students-bio {
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.profile-heading {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.profile-pics {
+    width: 25%;
+    border-radius: 100px;
+    margin-left: 38%;
+    padding: 10px 10px;
+}
+
+.bio {
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.location {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-align: center;
+    color: #71882F;
+}
+
+.title {
+    font-size: 1rem;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.profile-pics.bio.location.title {
+    background-color: black;
+    position: fixed;
+}
+
+.body-content p {
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    background-color:black;
+    color: white;
+    padding: 18px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.student-bio {
+    width: 100%;
+    position: fixed;
+    height: 50%;
+    overflow: auto;
+    background: white;
+}
+
+.dropdown {
+    display: flex;
+    float: left;
+    position: relative;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+}
+
+li:hover {
+    background-color:darkgreen;
+    color: black;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 600%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0px 16px;   
+    z-index: 1;
+    margin-top: 50%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-cover {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+/* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+    .profile-pics {
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    .students-bio {
+        padding: 20px;
+    }
+
+    .bio, .location, .title {
+        font-size: 0.9rem;
+    }
+
+    .body-content p {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    .student-bio {
+        height: auto;
+        position: static;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .main-cover {
+        margin-left: 2%;
+    }
+}
+
+/* Tablets (600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .profile-pics {
+        width: 40%;
+        margin-left: 30%;
+    }
+    
+    .students-bio {
+        padding: 30px;
+    }
+
+    .bio, .location, .title {
+        font-size: 1rem;
+    }
+
+    .body-content p {
+        font-size: 18px;
+        padding: 15px 18px;
+    }
+
+    .student-bio {
+        height: 60%;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .main-cover {
+        margin-left: 3%;
+    }
+}
+
+/* Desktops (768px and up) */
+@media (min-width: 769px) {
+    .profile-pics {
+        width: 25%;
+        margin-left: 38%;
+    }
+
+    .students-bio {
+        padding: 40px;
+    }
+
+    .bio, .location, .title {
+        font-size: 1rem;
+    }
+
+    .body-content p {
+        font-size: 20px;
+        padding: 18px 20px;
+    }
+
+    .student-bio {
+        height: 50%;
+    }
+
+    .dropdown-content {
+        width: 600%;
+        margin-top: 50%;
+    }
+
+    .main-cover {
+        margin-left: 5%;
+    }
+}
